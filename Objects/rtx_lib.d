@@ -9,4 +9,7 @@
 .\objects\rtx_lib.o: D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include\rtx_def.h
 .\objects\rtx_lib.o: .\RTE\_Target_STM32F407VET6\RTE_Components.h
 .\objects\rtx_lib.o: .\RTE\CMSIS\RTX_Config.h
+.\objects\rtx_lib.o: D:\Keil_v5\Arm\Packs\Keil\ARM_Compiler\1.7.1\Include\EventRecorder.h
+.\objects\rtx_lib.o: .\RTE\Compiler\EventRecorderConf.h
 .\objects\rtx_lib.o: D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h
+.\objects\rtx_lib.o: .\RTE\Compiler\EventRecorderConf.h

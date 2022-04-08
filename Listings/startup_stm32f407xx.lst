@@ -852,18 +852,20 @@ ARM Macro Assembler    Page 14
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=.\objects\startup_stm32f407xx.d -o.\objects\startup_stm32f40
-7xx.o -I.\RTE\CMSIS -I.\RTE\Device\STM32F407VETx -I.\RTE\Device\STM32F407VETx\S
-TCubeGenerated -I.\RTE\Device\STM32F407VETx\STCubeGenerated\Inc -I.\RTE\Network
- -I.\RTE\_Target_STM32F407VET6 -ID:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Cor
-e\Include -ID:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include -ID:\Keil
-_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include -ID:\Keil_v5\Arm\Packs\ARM\CM
-SIS\5.8.0\CMSIS\RTOS2\RTX\Include -ID:\Keil_v5\Arm\Packs\Keil\MDK-Middleware\7.
-14.0\Network\Include -ID:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\C
-MSIS\Device\ST\STM32F4xx\Include -ID:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.16
-.0\Drivers\STM32F4xx_HAL_Driver\Inc --predefine="__RTX SETA 1" --predefine="__U
-VISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SE
-TA 1" --predefine="_RTE_ SETA 1" --list=.\listings\startup_stm32f407xx.lst RTE\
-Device\STM32F407VETx\startup_stm32f407xx.s
+7xx.o -I.\RTE\CMSIS -I.\RTE\Compiler -I.\RTE\Device\STM32F407VETx -I.\RTE\Devic
+e\STM32F407VETx\STCubeGenerated -I.\RTE\Device\STM32F407VETx\STCubeGenerated\In
+c -I.\RTE\File_System -I.\RTE\Network -I.\RTE\_Target_STM32F407VET6 -ID:\Keil_v
+5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include -ID:\Keil_v5\Arm\Packs\ARM\CMSIS
+\5.8.0\CMSIS\Driver\Include -ID:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\
+Include -ID:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include -ID:\Kei
+l_v5\Arm\Packs\Keil\ARM_Compiler\1.7.1\Include -ID:\Keil_v5\Arm\Packs\Keil\MDK-
+Middleware\7.14.0\FileSystem\Include -ID:\Keil_v5\Arm\Packs\Keil\MDK-Middleware
+\7.14.0\Network\Include -ID:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Driver
+s\CMSIS\Device\ST\STM32F4xx\Include -ID:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2
+.16.0\Drivers\STM32F4xx_HAL_Driver\Inc --predefine="__RTX SETA 1" --predefine="
+__UVISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx
+ SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\startup_stm32f407xx.lst R
+TE\Device\STM32F407VETx\startup_stm32f407xx.s
 
 
 
