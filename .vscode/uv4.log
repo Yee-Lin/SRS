@@ -1,0 +1,29 @@
+Load "c:\\Users\\LZY\\OneDrive\\Pix Project\\Watchdog for Espana Planck\\SRS\\Objects\\SRS.axf" 
+Set JLink Project File to "c:\Users\LZY\OneDrive\Pix Project\Watchdog for Espana Planck\SRS\JLinkSettings.ini"* JLink Info: Device "STM32F407VE" selected.
+
+JLink info:
+------------
+DLL: V7.62b, compiled Mar  8 2022 15:11:05
+Firmware: J-Link V9 compiled May  7 2021 16:26:12
+Hardware: V9.50
+S/N : 59530283 
+Feature(s) : JFlash, GDB, RDI, FlashBP, FlashDL 
+
+* JLink Info: InitTarget() start
+* JLink Info: TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+* JLink Info: Error: Scanning JTAG chain failed.
+* JLink Info: Can not attach to CPU. Trying connect under reset.
+* JLink Info: TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+* JLink Info: Error: Scanning JTAG chain failed.
+* JLink Info: Connecting to CPU via connect under reset failed.
+* JLink Info: InitTarget() end
+* JLink Info: InitTarget() start
+* JLink Info: TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+* JLink Info: Error: Scanning JTAG chain failed.
+* JLink Info: Can not attach to CPU. Trying connect under reset.
+* JLink Info: TotalIRLen = ?, IRPrint = 0x..000000000000000000000000
+* JLink Info: Error: Scanning JTAG chain failed.
+* JLink Info: Connecting to CPU via connect under reset failed.
+* JLink Info: InitTarget() end
+Error: Flash Download failed  -  Target DLL has been cancelled
+Flash Load finished at 14:38:26

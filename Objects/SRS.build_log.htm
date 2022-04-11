@@ -5,11 +5,11 @@
 <h2>Tool Versions:</h2>
 IDE-Version: ¦ÌVision V5.36.0.0
 Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Y W, Double Cats RC, LIC=CZLZX-H5JYQ-KP6ZY-IWGKI-GH9E0-0X8N0
+License Information: 1 LZY, 1, LIC=YA39H-WQTHC-567Q2-9N6HB-ZTP51-WK3PV
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
-Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 7 (build 960)
 Assembler:       Armasm.exe V5.06 update 7 (build 960)
 Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
@@ -21,16 +21,44 @@ Target DLL:      Segger\JL2CM3.dll V2.99.40.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-D:\Firmware_Projects\SecurityRedundancySystem\SRS\SRS.uvprojx
-Project File Date:  04/08/2022
+C:\Users\LZY\OneDrive\Pix Project\Watchdog for Espana Planck\SRS\SRS.uvprojx
+Project File Date:  04/11/2022
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target STM32F407VET6'
-compiling FS_Config.c...
+compiling EventRecorder.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_it.c...
+compiling monitor.c...
+SourceFiles\monitor.c(7): warning:  #550-D: variable "threadId"  was set but never used
+  static osThreadId_t threadId;
+SourceFiles\monitor.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_eth.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling main.c...
+compiling MCI_STM32F4xx.c...
+compiling EMAC_STM32F4xx.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_sd.c...
+compiling stm32f4xx_ll_sdmmc.c...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_can.c...
 linking...
-Program Size: Code=41208 RO-data=1760 RW-data=34616 ZI-data=27568  
-".\Objects\SRS.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=40308 RO-data=1720 RW-data=34620 ZI-data=27692  
+FromELF: creating hex file...
+".\Objects\SRS.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -46,16 +74,16 @@ Package Vendor: ARM
    * Component: Keil RTX5 Variant: Library Version: 5.5.3
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS-Driver.2.7.0.pack
-                ARM.CMSIS-Driver.2.7.0
+                http://www.keil.com/pack/ARM.CMSIS-Driver.2.6.1.pack
+                ARM.CMSIS-Driver.2.6.1
                 CMSIS Drivers for external devices
    * Component: DP83848C Version: 6.2.0
 
 Package Vendor: Keil
-                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.1.pack
-                Keil.ARM_Compiler.1.7.1
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.3.pack
+                Keil.ARM_Compiler.1.6.3
                 Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
-   * Component: Event Recorder Variant: DAP Version: 1.5.1
+   * Component: Event Recorder Variant: DAP Version: 1.4.0
    * Component: File Variant: File System Version: 1.2.0
 
 Package Vendor: Keil
@@ -65,15 +93,15 @@ Package Vendor: Keil
    * Component: STM32CubeMX Version: 1.1.0
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.MDK-Middleware.7.14.0.pack
-                Keil.MDK-Middleware.7.14.0
+                http://www.keil.com/pack/Keil.MDK-Middleware.7.13.0.pack
+                Keil.MDK-Middleware.7.13.0
                 Middleware for Keil MDK-Professional and MDK-Plus
-   * Component: CORE Variant: LFN Debug Version: 6.14.4
-   * Component: Memory Card Version: 6.14.4
-   * Component: CORE Variant: IPv4 Release Version: 7.16.0
-   * Component: ETH Version: 7.16.0
-   * Component: TCP Version: 7.16.0
-   * Component: UDP Version: 7.16.0
+   * Component: CORE Variant: LFN Debug Version: 6.14.1
+   * Component: Memory Card Version: 6.14.1
+   * Component: CORE Variant: IPv4 Release Version: 7.15.0
+   * Component: ETH Version: 7.15.0
+   * Component: TCP Version: 7.15.0
+   * Component: UDP Version: 7.15.0
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
@@ -82,11 +110,13 @@ Package Vendor: Keil
    * Component: STM32Cube Framework Version: 1.0.0
    * Component: Ethernet MAC Version: 2.9
    * Component: MCI Version: 2.10
+   * Component: CAN Version: 1.7.13
    * Component: Common Version: 1.7.13
    * Component: Cortex Version: 1.7.13
    * Component: DMA Version: 1.7.13
    * Component: ETH Version: 1.7.13
    * Component: GPIO Version: 1.7.13
+   * Component: I2C Version: 1.7.13
    * Component: PWR Version: 1.7.13
    * Component: RCC Version: 1.7.13
    * Component: SD Version: 1.7.13
@@ -102,15 +132,15 @@ Package Vendor: Keil
   .\RTE\File_System
   .\RTE\Network
   .\RTE\_Target_STM32F407VET6
-  D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
-  D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include
-  D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include
-  D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include
-  D:\Keil_v5\Arm\Packs\Keil\ARM_Compiler\1.7.1\Include
-  D:\Keil_v5\Arm\Packs\Keil\MDK-Middleware\7.14.0\FileSystem\Include
-  D:\Keil_v5\Arm\Packs\Keil\MDK-Middleware\7.14.0\Network\Include
-  D:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
-  D:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc
+  C:\Users\LZY\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\FileSystem\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc
 
 <h2>Collection of Component Files used:</h2>
 
@@ -131,54 +161,54 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.3
-      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
-      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Source file:   CMSIS\RTOS2\RTX\Template\main.c
+      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
+      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
       Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
       Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
-      Source file:   CMSIS\RTOS2\RTX\Template\main.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
+      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
       Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
       Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
-      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
-      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
       Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
-      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
 
-   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.5.1
-      Include file:  Config\EventRecorderConf.h
-      Include file:  Include\EventRecorder.h
+   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
       Source file:   Source\EventRecorder.c
+      Include file:  Include\EventRecorder.h
+      Include file:  Config\EventRecorderConf.h
 
    * Component: Keil.ARM Compiler::Compiler:I/O:File:File System:1.2.0
       Source file:   Source\retarget_io.c
 
-   * Component: Keil.MDK-Plus::File System:CORE:LFN Debug:6.14.4
+   * Component: Keil.MDK-Plus::File System:CORE:LFN Debug:6.14.1
       Library file:  FileSystem\Lib\ARM\FS_Dbg_LFN_CM3_L.lib
       Include file:  FileSystem\Include\rl_fs.h
       Source file:   FileSystem\Config\FS_Config.c
       Source file:   FileSystem\Config\FS_Debug.c
 
-   * Component: Keil.MDK-Plus::File System:Drive:Memory Card:6.14.4
+   * Component: Keil.MDK-Plus::File System:Drive:Memory Card:6.14.1
       Include file:  FileSystem\Config\FS_Config_MC.h
 
-   * Component: Keil.MDK-Plus::Network:CORE:IPv4 Release:7.16.0
-      Source file:   Network\Config\Net_Config.c
-      Include file:  Network\Include\rl_net.h
+   * Component: Keil.MDK-Plus::Network:CORE:IPv4 Release:7.15.0
       Library file:  Network\Lib\ARM\Net4_CM3_L.lib
+      Include file:  Network\Include\rl_net.h
+      Source file:   Network\Config\Net_Config.c
 
-   * Component: Keil.MDK-Plus::Network:Interface:ETH:7.16.0
+   * Component: Keil.MDK-Plus::Network:Interface:ETH:7.15.0
       Include file:  Network\Config\Net_Config_ETH.h
 
-   * Component: Keil.MDK-Plus::Network:Socket:TCP:7.16.0
+   * Component: Keil.MDK-Plus::Network:Socket:TCP:7.15.0
+      Include file:  Network\Config\Net_Config_TCP.h
       Source file:   Network\Template\TCP_Socket_Server.c
       Source file:   Network\Template\TCP_Socket_Client.c
-      Include file:  Network\Config\Net_Config_TCP.h
 
-   * Component: Keil.MDK-Plus::Network:Socket:UDP:7.16.0
-      Include file:  Network\Config\Net_Config_UDP.h
+   * Component: Keil.MDK-Plus::Network:Socket:UDP:7.15.0
       Source file:   Network\Template\UDP_Socket.c
+      Include file:  Network\Config\Net_Config_UDP.h
 
    * Component: Keil::CMSIS Driver:Ethernet MAC:2.9
       Source file:   CMSIS\Driver\EMAC_STM32F4xx.c
@@ -190,21 +220,24 @@ Package Vendor: Keil
       Source file:   CMSIS\Driver\MCI_STM32F4xx.c
 
    * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.1.0
-      Include file:  MX_Device.h
-      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
-      Source file:   STCubeGenerated\Src\stm32f4xx_hal_timebase_tim.c
       Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
+      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
+      Include file:  MX_Device.h
+      Source file:   STCubeGenerated\Src\stm32f4xx_hal_timebase_tim.c
+
+   * Component: Keil::Device:STM32Cube HAL:CAN:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
 
    * Component: Keil::Device:STM32Cube HAL:Common:1.7.13
-      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
 
    * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
    * Component: Keil::Device:STM32Cube HAL:DMA:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
    * Component: Keil::Device:STM32Cube HAL:ETH:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_eth.c
@@ -212,9 +245,12 @@ Package Vendor: Keil
    * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
+   * Component: Keil::Device:STM32Cube HAL:I2C:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
+
    * Component: Keil::Device:STM32Cube HAL:PWR:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
    * Component: Keil::Device:STM32Cube HAL:RCC:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
@@ -229,12 +265,12 @@ Package Vendor: Keil
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
    * Component: Keil::Device:Startup:2.6.3
-      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:20
 </pre>
 </body>
 </html>
