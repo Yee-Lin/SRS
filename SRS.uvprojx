@@ -325,7 +325,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>3</v6Lang>
@@ -381,12 +381,22 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Monitor</GroupName>
+          <GroupName>User</GroupName>
           <Files>
             <File>
               <FileName>monitor.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\SourceFiles\monitor.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\app_main.c</FilePath>
+            </File>
+            <File>
+              <FileName>canMessage.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\canMessage.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -421,9 +431,43 @@
         </Group>
         <Group>
           <GroupName>Control Modules</GroupName>
+          <Files>
+            <File>
+              <FileName>brake.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\brake.c</FilePath>
+            </File>
+            <File>
+              <FileName>can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\can.c</FilePath>
+            </File>
+            <File>
+              <FileName>battery.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\battery.c</FilePath>
+            </File>
+            <File>
+              <FileName>moduleControl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\moduleControl.c</FilePath>
+            </File>
+            <File>
+              <FileName>emergencyButton.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\emergencyButton.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Low Layer Devices</GroupName>
+          <Files>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\io.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>File System</GroupName>

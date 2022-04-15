@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "monitor.h": "c",
+        "battery.h": "c",
+        "main.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "io.h": "c",
+        "stdint.h": "c",
+        "stdio.h": "c",
+        "canmessage.h": "c",
+        "can.h": "c"
+    },
+    "commentTranslate.source": "Google"
+}

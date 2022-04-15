@@ -9,6 +9,15 @@ static osThreadId_t threadId;
 /* --------------- Static functions ---------------- */
 void ThreadMonitor(void*);
 
+
+/* --------------- Global variables ---------------- */
+osEventFlagsId_t motor0Event;
+osEventFlagsId_t motor1Event;
+osEventFlagsId_t motor2Event;
+osEventFlagsId_t motor3Event;
+osEventFlagsId_t frontEPSEvent;
+osEventFlagsId_t rearEPSEvent;
+
 void InitMonitor(void)
 {
 	messageQueueId = osMessageQueueNew(16, 16, NULL);

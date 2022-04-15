@@ -11,7 +11,7 @@
 .\objects\net_config.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\net_config.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\net_config.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include\net_rtos2.h
-.\objects\net_config.o: C:\Users\LZY\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\net_config.o: .\IncludeFiles\cmsis_os2.h
 .\objects\net_config.o: C:\Users\LZY\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
 .\objects\net_config.o: C:\Users\LZY\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include\rtx_def.h
 .\objects\net_config.o: .\RTE\CMSIS\RTX_Config.h

@@ -22,43 +22,41 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 C:\Users\LZY\OneDrive\Pix Project\Watchdog for Espana Planck\SRS\SRS.uvprojx
-Project File Date:  04/11/2022
+Project File Date:  04/15/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target STM32F407VET6'
-compiling EventRecorder.c...
-compiling stm32f4xx_hal_dma.c...
-compiling stm32f4xx_hal.c...
-compiling stm32f4xx_it.c...
-compiling monitor.c...
-SourceFiles\monitor.c(7): warning:  #550-D: variable "threadId"  was set but never used
-  static osThreadId_t threadId;
-SourceFiles\monitor.c: 1 warning, 0 errors
-compiling stm32f4xx_hal_eth.c...
-compiling stm32f4xx_hal_cortex.c...
-compiling stm32f4xx_hal_dma_ex.c...
-compiling main.c...
-compiling MCI_STM32F4xx.c...
-compiling EMAC_STM32F4xx.c...
-compiling stm32f4xx_hal_pwr_ex.c...
-compiling stm32f4xx_hal_rcc.c...
-compiling stm32f4xx_hal_pwr.c...
-compiling stm32f4xx_hal_gpio.c...
-compiling stm32f4xx_hal_rcc_ex.c...
-compiling stm32f4xx_hal_tim.c...
-compiling stm32f4xx_hal_sd.c...
-compiling stm32f4xx_ll_sdmmc.c...
-compiling stm32f4xx_hal_timebase_tim.c...
-compiling stm32f4xx_hal_msp.c...
-compiling stm32f4xx_hal_tim_ex.c...
-compiling system_stm32f4xx.c...
-compiling stm32f4xx_hal_i2c.c...
-compiling stm32f4xx_hal_can.c...
+compiling emergencyButton.c...
+SourceFiles\emergencyButton.c(77): warning:  #1-D: last line of file ends without a newline
+  } 
+SourceFiles\emergencyButton.c: 1 warning, 0 errors
+compiling canMessage.c...
+SourceFiles\canMessage.c(1): warning:  #1-D: last line of file ends without a newline
+  #include "canMessage.h"
+SourceFiles\canMessage.c: 1 warning, 0 errors
+compiling can.c...
+SourceFiles\can.c(23): warning:  #550-D: variable "threadIdCanReceive"  was set but never used
+  static osThreadId_t threadIdCanReceive;
+SourceFiles\can.c(24): warning:  #550-D: variable "threadIdCanTransmit"  was set but never used
+  static osThreadId_t threadIdCanTransmit;
+SourceFiles\can.c(50): warning:  #177-D: function "CanConfigAndStart"  was declared but never referenced
+  static HAL_StatusTypeDef CanConfigAndStart(void);
+SourceFiles\can.c(51): warning:  #177-D: function "app_can_send"  was declared but never referenced
+  static void app_can_send(void* arg);
+SourceFiles\can.c(52): warning:  #177-D: function "app_can"  was declared but never referenced
+  static void app_can(void const* arg);
+SourceFiles\can.c: 5 warnings, 0 errors
+compiling io.c...
+SourceFiles\io.c(46): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(IO_Output[ioPort].Port, IO_Output[ioPort].Pin, level);
+SourceFiles\io.c(13): warning:  #550-D: variable "appIoInputThreadId"  was set but never used
+  static osThreadId_t appIoInputThreadId;
+SourceFiles\io.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=40308 RO-data=1720 RW-data=34620 ZI-data=27692  
+Program Size: Code=21296 RO-data=768 RW-data=34348 ZI-data=12988  
 FromELF: creating hex file...
-".\Objects\SRS.axf" - 0 Error(s), 1 Warning(s).
+".\Objects\SRS.axf" - 0 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -161,42 +159,42 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.3
-      Source file:   CMSIS\RTOS2\RTX\Template\main.c
-      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
-      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
-      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
-      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
       Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
       Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
+      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
       Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Source file:   CMSIS\RTOS2\RTX\Template\main.c
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
       Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
       Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
+      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
 
    * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
-      Source file:   Source\EventRecorder.c
-      Include file:  Include\EventRecorder.h
       Include file:  Config\EventRecorderConf.h
+      Include file:  Include\EventRecorder.h
+      Source file:   Source\EventRecorder.c
 
    * Component: Keil.ARM Compiler::Compiler:I/O:File:File System:1.2.0
       Source file:   Source\retarget_io.c
 
    * Component: Keil.MDK-Plus::File System:CORE:LFN Debug:6.14.1
-      Library file:  FileSystem\Lib\ARM\FS_Dbg_LFN_CM3_L.lib
-      Include file:  FileSystem\Include\rl_fs.h
-      Source file:   FileSystem\Config\FS_Config.c
       Source file:   FileSystem\Config\FS_Debug.c
+      Library file:  FileSystem\Lib\ARM\FS_Dbg_LFN_CM3_L.lib
+      Source file:   FileSystem\Config\FS_Config.c
+      Include file:  FileSystem\Include\rl_fs.h
 
    * Component: Keil.MDK-Plus::File System:Drive:Memory Card:6.14.1
       Include file:  FileSystem\Config\FS_Config_MC.h
 
    * Component: Keil.MDK-Plus::Network:CORE:IPv4 Release:7.15.0
-      Library file:  Network\Lib\ARM\Net4_CM3_L.lib
-      Include file:  Network\Include\rl_net.h
       Source file:   Network\Config\Net_Config.c
+      Include file:  Network\Include\rl_net.h
+      Library file:  Network\Lib\ARM\Net4_CM3_L.lib
 
    * Component: Keil.MDK-Plus::Network:Interface:ETH:7.15.0
       Include file:  Network\Config\Net_Config_ETH.h
@@ -221,16 +219,16 @@ Package Vendor: Keil
 
    * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.1.0
       Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
-      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
-      Include file:  MX_Device.h
       Source file:   STCubeGenerated\Src\stm32f4xx_hal_timebase_tim.c
+      Include file:  MX_Device.h
+      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
 
    * Component: Keil::Device:STM32Cube HAL:CAN:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
 
    * Component: Keil::Device:STM32Cube HAL:Common:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
       Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
    * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
@@ -249,8 +247,8 @@ Package Vendor: Keil
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
 
    * Component: Keil::Device:STM32Cube HAL:PWR:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
    * Component: Keil::Device:STM32Cube HAL:RCC:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
@@ -265,12 +263,12 @@ Package Vendor: Keil
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
    * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:20
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

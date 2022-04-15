@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "monitor.h"
+#include "app_main.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -119,8 +119,9 @@ int main(void)
   MX_CAN2_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+  
     osKernelInitialize();
-    InitMonitor();
+		InitAppMain();
     osKernelStart();
   /* USER CODE END 2 */
 
@@ -284,6 +285,9 @@ static void MX_ETH_Init(void)
   MACAddr[5] = 0x00;
   heth.Init.MACAddr = &MACAddr[0];
   heth.Init.MediaInterface = HAL_ETH_RMII_MODE;
+//  heth.Init.TxDesc = DMATxDscrTab;
+//  heth.Init.RxDesc = DMARxDscrTab;
+//  heth.Init.RxBuffLen = 1524;
 
   /* USER CODE BEGIN MACADDRESS */
   heth.Init.AutoNegotiation = ETH_AUTONEGOTIATION_DISABLE;
@@ -417,12 +421,22 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(Relay_GPIO_Port, Relay_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(VCU_GPIO_Port, VCU_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOE, Motor0_Pin|Motor1_Pin|Motor2_Pin|Motor3_Pin
                           |FrontEPS_Pin|RearEPS_Pin|EBS_Pin|EPBS_FRONT_Pin
                           |EPBS_REAR_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : Relay_Pin */
+  GPIO_InitStruct.Pin = Relay_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(Relay_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : VCU_Pin */
   GPIO_InitStruct.Pin = VCU_Pin;
