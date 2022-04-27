@@ -8,7 +8,16 @@
         "stdint.h": "c",
         "stdio.h": "c",
         "canmessage.h": "c",
-        "can.h": "c"
+        "can.h": "c",
+        "brake.h": "c",
+        "eps.h": "c",
+        "vcu.h": "c",
+        "motordrive.h": "c",
+        "errorhandle.h": "c",
+        "gy25t.h": "c",
+        "uart.h": "c",
+        "string": "c",
+        "modulecontrol.h": "c"
     },
-    "commentTranslate.source": "Google"
+    "commentTranslate.source": "Baidu"
 }

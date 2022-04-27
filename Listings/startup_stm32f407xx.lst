@@ -864,10 +864,11 @@ m\Packs\Keil\MDK-Middleware\7.13.0\FileSystem\Include -IC:\Users\LZY\AppData\Lo
 cal\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include -IC:\Users\LZY\AppData
 \Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\In
 clude -IC:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\
-STM32F4xx_HAL_Driver\Inc --predefine="__RTX SETA 1" --predefine="__UVISION_VERS
-ION SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --pre
-define="_RTE_ SETA 1" --list=.\listings\startup_stm32f407xx.lst RTE\Device\STM3
-2F407VETx\startup_stm32f407xx.s
+STM32F4xx_HAL_Driver\Inc -IC:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_
+DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy --predefine="__RTX SETA 1" -
+-predefine="__UVISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine=
+"STM32F407xx SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\startup_stm32
+f407xx.lst RTE\Device\STM32F407VETx\startup_stm32f407xx.s
 
 
 

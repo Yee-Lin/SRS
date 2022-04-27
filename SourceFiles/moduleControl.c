@@ -87,3 +87,4 @@ void Module_StarPowerAll(void)
     SRS_EnableEBS();
     SRS_EnableCANRelay();
 }
+

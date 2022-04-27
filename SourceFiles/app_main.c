@@ -15,6 +15,7 @@
 #include "app_main.h"
 #include "battery.h"
 #include "cmsis_os2.h" // ::CMSIS:RTOS2
+#include "canMessage.h"
 
 
 /* --------------- Static functions ---------------- */
@@ -41,21 +42,14 @@ uint8_t time1;
  */
 void app_main(void *arg)
 {
-		
-//	osThreadId_t osThIdCan1 = osThreadNew(app_can1, NULL, NULL);
-//	osThreadId_t osThIdCan2 = osThreadNew(app_can2, NULL, NULL);
-//	osThreadId_t osThIdCan1Send = osThreadNew(app_can1_send, NULL, NULL);
-//	osThreadId_t osThIdCan2Send = osThreadNew(app_can2_send, NULL, NULL);
-//	InitMonitor();
+	InitCanMsg();
+	InitMonitor();
 	while (true)
 	{
-//		CanTransmit(0x88, testMsg, 8);
 		time1++;
 		osDelay(100);
 	}
 }
-
-
 
 /**
  * @brief Initalize app_main

@@ -398,6 +398,11 @@
               <FileType>1</FileType>
               <FilePath>.\SourceFiles\canMessage.c</FilePath>
             </File>
+            <File>
+              <FileName>mssageCompare.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\mssageCompare.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -456,6 +461,36 @@
               <FileName>emergencyButton.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\SourceFiles\emergencyButton.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\vcu.c</FilePath>
+            </File>
+            <File>
+              <FileName>eps.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\eps.c</FilePath>
+            </File>
+            <File>
+              <FileName>motorDrive.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\motorDrive.c</FilePath>
+            </File>
+            <File>
+              <FileName>errorHandle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\errorHandle.c</FilePath>
+            </File>
+            <File>
+              <FileName>GY25T.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\GY25T.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SourceFiles\uart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -677,6 +712,48 @@
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="TIM" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL DMA">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target STM32F407VET6"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="UART" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL DMA">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target STM32F407VET6"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube LL" Csub="Common" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 LL Common">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target STM32F407VET6"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube LL" Csub="GPIO" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 LL">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target STM32F407VET6"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube LL" Csub="PWR" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 LL">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target STM32F407VET6"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube LL" Csub="RCC" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 LL">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target STM32F407VET6"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube LL" Csub="USART" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 LL">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target STM32F407VET6"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="STM32Cube LL" Csub="UTILS" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
         <targetInfos>
           <targetInfo name="Target STM32F407VET6"/>

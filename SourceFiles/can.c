@@ -196,3 +196,4 @@ canStatus_t CanRegisterCallback(uint32_t messageID, uint32_t messageMask, CAN_Ca
 	if(HAL_OK == status) return canOK;
 	else return canError;
 }
+

@@ -1,4 +1,4 @@
-.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\OneDrive\Pix Project\Watchdog for Espana Planck\SRS\RTE\Device\STM32F407VETx\STCubeGenerated\Src\stm32f4xx_hal_msp.c
+.\objects\stm32f4xx_hal_msp.o: c:\Users\LZY\OneDrive\Pix Project\Watchdog for Espana Planck\SRS\RTE\Device\STM32F407VETx\STCubeGenerated\Src\stm32f4xx_hal_msp.c
 .\objects\stm32f4xx_hal_msp.o: .\RTE\_Target_STM32F407VET6\Pre_Include_Global.h
 .\objects\stm32f4xx_hal_msp.o: .\RTE\Device\STM32F407VETx\STCubeGenerated\Inc\main.h
 .\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
@@ -37,5 +37,15 @@
 .\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h
 .\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h
 .\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usart.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_bus.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_cortex.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_system.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_pwr.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h
+.\objects\stm32f4xx_hal_msp.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_exti.h
 .\objects\stm32f4xx_hal_msp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\stm32f4xx_hal_msp.o: .\IncludeFiles\cmsis_os2.h

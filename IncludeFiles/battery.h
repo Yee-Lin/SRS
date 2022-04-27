@@ -19,7 +19,7 @@ typedef struct
 }BMS_SYSTEM_MESSAGE_T;
 
 typedef struct
-{
+{ 
     uint8_t MOS_Temperature;
     uint8_t ENVIRONMENT_Temperature;
     uint8_t GROUP1_Temperature;
@@ -29,7 +29,9 @@ typedef struct
 }BMS_MOS_Temperature_T;
 
 void InitBattery(void);
-osStatus_t UpDataBatteryMsg(void);
+void UpDataBatteryMsg(void);
 BMU_MESSAGE_T GetDataBMUMsg(void);
 BMS_SYSTEM_MESSAGE_T GetDataBMS_SystemMsg(void);
-BMS_MOS_Temperature_T GetDataBMS_MOSMsg(void);
+void GetDataBMS_MOSMsg(void);
+void SetDataBMS_SystemMsg(uint8_t *playload);
+void SetDataBMUMsg(uint8_t *playload);

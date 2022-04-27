@@ -37,6 +37,16 @@
 .\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h
 .\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h
 .\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usart.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_bus.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_cortex.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_system.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_pwr.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h
+.\objects\stm32f4xx_it.o: C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_exti.h
 .\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\stm32f4xx_it.o: .\IncludeFiles\cmsis_os2.h
 .\objects\stm32f4xx_it.o: .\RTE\Device\STM32F407VETx\STCubeGenerated\Inc\stm32f4xx_it.h

@@ -21,42 +21,17 @@ Target DLL:      Segger\JL2CM3.dll V2.99.40.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\Users\LZY\OneDrive\Pix Project\Watchdog for Espana Planck\SRS\SRS.uvprojx
-Project File Date:  04/15/2022
+c:\Users\LZY\OneDrive\Pix Project\Watchdog for Espana Planck\SRS\SRS.uvprojx
+Project File Date:  04/26/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target STM32F407VET6'
-compiling emergencyButton.c...
-SourceFiles\emergencyButton.c(77): warning:  #1-D: last line of file ends without a newline
-  } 
-SourceFiles\emergencyButton.c: 1 warning, 0 errors
-compiling canMessage.c...
-SourceFiles\canMessage.c(1): warning:  #1-D: last line of file ends without a newline
-  #include "canMessage.h"
-SourceFiles\canMessage.c: 1 warning, 0 errors
-compiling can.c...
-SourceFiles\can.c(23): warning:  #550-D: variable "threadIdCanReceive"  was set but never used
-  static osThreadId_t threadIdCanReceive;
-SourceFiles\can.c(24): warning:  #550-D: variable "threadIdCanTransmit"  was set but never used
-  static osThreadId_t threadIdCanTransmit;
-SourceFiles\can.c(50): warning:  #177-D: function "CanConfigAndStart"  was declared but never referenced
-  static HAL_StatusTypeDef CanConfigAndStart(void);
-SourceFiles\can.c(51): warning:  #177-D: function "app_can_send"  was declared but never referenced
-  static void app_can_send(void* arg);
-SourceFiles\can.c(52): warning:  #177-D: function "app_can"  was declared but never referenced
-  static void app_can(void const* arg);
-SourceFiles\can.c: 5 warnings, 0 errors
-compiling io.c...
-SourceFiles\io.c(46): warning:  #188-D: enumerated type mixed with another type
-      HAL_GPIO_WritePin(IO_Output[ioPort].Port, IO_Output[ioPort].Pin, level);
-SourceFiles\io.c(13): warning:  #550-D: variable "appIoInputThreadId"  was set but never used
-  static osThreadId_t appIoInputThreadId;
-SourceFiles\io.c: 2 warnings, 0 errors
+compiling errorHandle.c...
 linking...
-Program Size: Code=21296 RO-data=768 RW-data=34348 ZI-data=12988  
+Program Size: Code=44860 RO-data=1720 RW-data=34796 ZI-data=27772  
 FromELF: creating hex file...
-".\Objects\SRS.axf" - 0 Error(s), 9 Warning(s).
+".\Objects\SRS.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -119,6 +94,13 @@ Package Vendor: Keil
    * Component: RCC Version: 1.7.13
    * Component: SD Version: 1.7.13
    * Component: TIM Version: 1.7.13
+   * Component: UART Version: 1.7.13
+   * Component: Common Version: 1.7.13
+   * Component: GPIO Version: 1.7.13
+   * Component: PWR Version: 1.7.13
+   * Component: RCC Version: 1.7.13
+   * Component: USART Version: 1.7.13
+   * Component: UTILS Version: 1.7.13
    * Component: Startup Version: 2.6.3
 
 <h2>Collection of Component include folders:</h2>
@@ -139,6 +121,7 @@ Package Vendor: Keil
   C:\Users\LZY\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include
   C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
   C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc
+  C:\Users\LZY\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
 
 <h2>Collection of Component Files used:</h2>
 
@@ -159,20 +142,20 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.3
-      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
       Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
-      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
-      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
       Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
       Source file:   CMSIS\RTOS2\RTX\Template\main.c
-      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
-      Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
       Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
+      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
       Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
+      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
 
    * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
       Include file:  Config\EventRecorderConf.h
@@ -183,10 +166,10 @@ Package Vendor: Keil
       Source file:   Source\retarget_io.c
 
    * Component: Keil.MDK-Plus::File System:CORE:LFN Debug:6.14.1
-      Source file:   FileSystem\Config\FS_Debug.c
+      Include file:  FileSystem\Include\rl_fs.h
       Library file:  FileSystem\Lib\ARM\FS_Dbg_LFN_CM3_L.lib
       Source file:   FileSystem\Config\FS_Config.c
-      Include file:  FileSystem\Include\rl_fs.h
+      Source file:   FileSystem\Config\FS_Debug.c
 
    * Component: Keil.MDK-Plus::File System:Drive:Memory Card:6.14.1
       Include file:  FileSystem\Config\FS_Config_MC.h
@@ -205,8 +188,8 @@ Package Vendor: Keil
       Source file:   Network\Template\TCP_Socket_Client.c
 
    * Component: Keil.MDK-Plus::Network:Socket:UDP:7.15.0
-      Source file:   Network\Template\UDP_Socket.c
       Include file:  Network\Config\Net_Config_UDP.h
+      Source file:   Network\Template\UDP_Socket.c
 
    * Component: Keil::CMSIS Driver:Ethernet MAC:2.9
       Source file:   CMSIS\Driver\EMAC_STM32F4xx.c
@@ -218,17 +201,17 @@ Package Vendor: Keil
       Source file:   CMSIS\Driver\MCI_STM32F4xx.c
 
    * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.1.0
-      Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
-      Source file:   STCubeGenerated\Src\stm32f4xx_hal_timebase_tim.c
       Include file:  MX_Device.h
+      Source file:   STCubeGenerated\Src\stm32f4xx_hal_timebase_tim.c
+      Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
       Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
 
    * Component: Keil::Device:STM32Cube HAL:CAN:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
 
    * Component: Keil::Device:STM32Cube HAL:Common:1.7.13
-      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
 
    * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
@@ -247,28 +230,48 @@ Package Vendor: Keil
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
 
    * Component: Keil::Device:STM32Cube HAL:PWR:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
    * Component: Keil::Device:STM32Cube HAL:RCC:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
    * Component: Keil::Device:STM32Cube HAL:SD:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_sdmmc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c
 
    * Component: Keil::Device:STM32Cube HAL:TIM:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
+   * Component: Keil::Device:STM32Cube HAL:UART:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
+
+   * Component: Keil::Device:STM32Cube LL:Common:1.7.13
+
+   * Component: Keil::Device:STM32Cube LL:GPIO:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_gpio.c
+
+   * Component: Keil::Device:STM32Cube LL:PWR:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_pwr.c
+
+   * Component: Keil::Device:STM32Cube LL:RCC:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_rcc.c
+
+   * Component: Keil::Device:STM32Cube LL:USART:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usart.c
+
+   * Component: Keil::Device:STM32Cube LL:UTILS:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c
+
    * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
-      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
